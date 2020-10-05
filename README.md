@@ -11,10 +11,10 @@
 ## Tech Stack:
 
 1. Create Spring starter project in STS and add "cxf spring boot jaxrs", "codehaus jackson" and "spring boot starter security" dependency. 
-2. Create REST Endpoint for Patient service:
-    I. Create Service Interface and mark it with JAX-RS annotations to create endpoints. @Path @GET, @POST @PathParam and so on.      
-    II. Implement the Interface in the implementor class with business logic. Use in memory database for storing patient details.           
-    III. Mark the DTO class with JaX-B annotation for XML support. @XmlRootElement, @XmlElement.
+2. Create REST Endpoint for Patient service:           
+    I. Create Service Interface and mark it with JAX-RS annotations to create endpoints. @Path @GET, @POST @PathParam and so on.          
+    II. Implement the Interface in the implementor class with business logic. Use in memory database for storing patient details.                 
+    III. Mark the DTO class with JaX-B annotation for XML support. @XmlRootElement, @XmlElement.         
     IV. Mark @Consumes and @Produces annotation in the Patient Service Interface. e.g.  @Consumes("application/xml, application/json).
     V. Enable the Jackson support in application.properties file by using "cxf.jaxrs.component-scan=true, 
     cxf.jaxrs.classes-scan-packages=org.codehaus.jackson.jaxrs.            
